@@ -1,0 +1,31 @@
+.background {
+    background-color: blanchedalmond;
+}
+
+.contactFormContainer div{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 15px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.inputs{
+    border-radius: 10px;
+    color: black;
+    background-color: antiquewhite;
+    box-shadow: none;
+}
+
+.field {
+    width: auto;
+}
+
+.ErrorText{
+    color: red;
+}
+
+.InputError {
+    color: red;
+    border:1px red solid;
+}

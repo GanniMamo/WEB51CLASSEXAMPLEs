@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/Contact.css">
+</head>
+<body class="background">
+    <div class="contactFormContainer div" id="contactFormContainer">
+        <form action="mailto:gannimamo9@gmail.com" onsubmit="return validateform();">
+        <div >
+            <label for="FullName">Full Name:</label>
+            <input type="text" id="FullName" name="FullName" class="inputs">
+        </div>
+        <div>
+            <label for="Nationality">Nationality:</label>
+            <select name="Nationality" id="Nationality" class="inputs">
+                <option value="0">Select Nationality</option>
+                <option value="1">Maltese</option>
+                <option value="2">English</option>
+                <option value="3">Italian</option>
+                <option value="4">French</option>
+                <option value="5">German</option>
+                <option value="6">Spanish</option>
+                <option value="7">Asian</option>
+            </select>
+        </div>
+        <div>
+            <label for="Age">Age:</label>
+            <select name="Age" id="Age" class="inputs">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <div>
+                <label for="UserName">User Name:</label>
+                <input type="text" id="UserName" name="UserName" class="inputs">
+            </div>
+            <div>
+                <label for="Password">Password:</label>
+                <input type="password" id="Password" name="Password" class="inputs">
+            </div>
+            <div>
+                <label for="Remember">Remember Password:</label>
+                <input type="checkbox" id="Remember" name="Remember" class="inputs">
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Please Select Favorite Colour</legend>
+                <div>
+                <input type="radio" id="Red" name="Colour" class="inputs">
+                <label for="Red">Red</label>
+            </div>
+            <div>
+                <input type="radio" id="Green" name="Colour" class="inputs">
+                <label for="Green">Green</label>
+            </div>
+            <div>
+                <input type="radio" id="Blue" name="Colour" class="inputs">
+                <label for="Blue">Blue</label>
+            </div>
+        </fieldset>
+            </div>
+            <button type="submit">Save</button>
+            <button type="reset" onclick="resetForm();">Reset</button>
+        </div>
+    </form>
+        <div id="contactFormErrors">
+            <ul id="errorlist" class="ErrorText">
+            </ul>
+        </div>
+        </div>
+
+        <script src="assets/scripts/Validation.js"></script>
+    </body>
+    </html>
